@@ -1,0 +1,10 @@
+// 11. GCD of Two Numbers
+function gcd(a, b) {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+console.log(gcd(20, 12));
